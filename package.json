@@ -1,0 +1,15 @@
+{
+  "name": "appium-transpile-prod",
+  "version": "0.0.1",
+  "description": "Runtime dependencies for traceur and sourcemap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "appium contributors",
+  "license": "Apache2",
+  "dependencies": {
+    "source-map-support": "^0.2.8",
+    "traceur": "0.0.79"
+  }
+}
