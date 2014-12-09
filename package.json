@@ -1,12 +1,12 @@
 {
   "name": "appium-transpile-runtime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Runtime dependencies for traceur and sourcemaps",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- "keywords": [
+  "keywords": [
     "appium"
   ],
   "author": "appium contributors",
