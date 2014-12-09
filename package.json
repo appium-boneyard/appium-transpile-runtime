@@ -1,13 +1,23 @@
 {
-  "name": "appium-transpile-prod",
+  "name": "appium-transpile-runtime",
   "version": "0.0.1",
-  "description": "Runtime dependencies for traceur and sourcemap",
+  "description": "Runtime dependencies for traceur and sourcemaps",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+ "keywords": [
+    "appium"
+  ],
   "author": "appium contributors",
   "license": "Apache2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appium/appium-transpile-runtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appium/appium-transpile-runtime/issues"
+  },
   "dependencies": {
     "source-map-support": "^0.2.8",
     "traceur": "0.0.79"
