@@ -6,7 +6,7 @@ Runtime dependencies for traceur and maps.
 ## Watch
 
 ```
-npm run-script watch
+npm run watch
 ```
 
 ## Test
