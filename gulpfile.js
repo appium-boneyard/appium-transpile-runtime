@@ -12,10 +12,6 @@ var gulp = require('gulp'),
     vinylPaths = require('vinyl-paths'),
     del = require('del');
 
-var argv = require('yargs')
-            .count('prod')
-            .argv;
-
 gulp.task('clean', function () {
   return gulp.src('build', {read: false})
     .pipe(vinylPaths(del));
@@ -23,10 +19,6 @@ gulp.task('clean', function () {
 
 gulp.task('transpile', function () {
   var transpiler = new Transpiler();
-  if (!argv.prod) {
-    transpiler.traceurOpts.typeAssertions = true;
-    transpiler.traceurOpts.typeAssertionModule = 'rtts-assert';
-  }
 
   var index = gulp.src('index.js')
     .pipe(transpiler.stream())
@@ -65,7 +57,6 @@ gulp.task('jshint', function () {
 gulp.task('lint',['jshint','jscs']);
 
 gulp.task('test', ['transpile'],  function () {
-  process.env.SKIP_TRACEUR_RUNTIME = true;
   return gulp
    .src('build/test/**/*-specs.js', {read: false})
    .pipe(mocha({reporter: 'nyan'}))

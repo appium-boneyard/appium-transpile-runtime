@@ -1,6 +1,6 @@
 {
   "name": "appium-transpile-runtime",
-  "description": "Runtime dependencies for traceur and sourcemaps.",
+  "description": "Runtime dependencies for sourcemaps.",
   "keywords": [
     "appium"
   ],
@@ -23,15 +23,15 @@
     "lib": "lib"
   },
   "dependencies": {
-    "source-map-support": "^0.2.8",
-    "traceur": "0.0.79"
+    "6to5": "^2.8.1",
+    "source-map-support": "^0.2.8"
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp once && ./node_modules/.bin/mocha build/test",
     "watch": "./node_modules/.bin/gulp"
   },
   "devDependencies": {
-    "appium-gulp-plugins": "^0.0.8",
+    "appium-gulp-plugins": "https://github.com/appium/appium-gulp-plugins/archive/6to5.tar.gz",
     "chai": "^1.10.0",
     "chai-as-promised": "^4.1.1",
     "del": "^1.1.1",
@@ -42,10 +42,8 @@
     "jshint-stylish": "^1.0.0",
     "merge-stream": "^0.1.6",
     "mocha": "^2.1.0",
-    "mochawait": "^1.1.0",
     "q": "^1.1.2",
     "run-sequence": "^1.0.2",
-    "vinyl-paths": "^1.0.0",
-    "yargs": "^1.3.3"
+    "vinyl-paths": "^1.0.0"
   }
 }
