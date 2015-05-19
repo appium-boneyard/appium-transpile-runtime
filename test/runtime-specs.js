@@ -1,3 +1,5 @@
+// transpile:mocha
+
 require('../index');
 
 import chai from 'chai';
@@ -8,7 +10,7 @@ chai.should();
 chai.use(chaiAsPromised);
 
 describe('sample', () => {
-  it('should-work',async () => {
+  it('should-work', async () => {
     let res = await '123';
     res.should.equal('123');
   });

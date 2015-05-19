@@ -1,7 +1,7 @@
 appium-transpile-runtime
 ===================
 
-Runtime dependencies for traceur and maps.
+Runtime dependencies for babel and maps.
 
 ## Watch
 
